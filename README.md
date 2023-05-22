@@ -14,14 +14,3 @@ Table - Employee
 
 Implemented GET, POST, PUT, DELETE Method
 Database - Mysql 
-
-
-
-Json object -
-{
-	"id" : "101559",
-	"name" : "Saiful Alam",
-	"position" : "Engineer",
-	"contactNumber" : "01521434485",
-	"department" : "Technology"
-}
