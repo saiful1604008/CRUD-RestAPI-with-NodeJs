@@ -3,7 +3,7 @@ const db = require('../database/db');
 const router = express.Router();
 
 
-router.delete('/employee/:id', (req, res) => {
+router.delete('/:id', (req, res) => {
     const jobId = req.params.id;
     //console.log(jobId)
     const sql = 'DELETE FROM employee WHERE id = ?'

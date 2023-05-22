@@ -3,7 +3,7 @@ const db = require('../database/db');
 const router = express.Router();
 
 
-router.get('/employee/:id', (req, res) => {
+router.get('/:id', (req, res) => {
     const jobId = req.params.id;
     const sql = 'SELECT * FROM employee WHERE id = ?'
     db.query(sql, jobId, (err, results) => {

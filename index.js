@@ -13,11 +13,11 @@ const port = 3000;
 
 // ---- middleware ----- 
 app.use(bodyParser.json());
-app.use(createEmployeeRoute);
-app.use(getEmployeesRoute);
-app.use(getSingleEmployeeRoute);
-app.use(updateEmployeeRouter);
-app.use(deleteEmployeeRouter);
+app.use('/employee', createEmployeeRoute);
+app.use('/employees', getEmployeesRoute);
+app.use('/employee', getSingleEmployeeRoute);
+app.use('/employee', updateEmployeeRouter);
+app.use('/employee', deleteEmployeeRouter);
 
 
 app.listen(port, () => {
@@ -26,4 +26,3 @@ app.listen(port, () => {
 
 
 module.exports = app;
-

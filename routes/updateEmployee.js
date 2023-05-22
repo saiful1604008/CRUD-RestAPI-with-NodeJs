@@ -3,7 +3,7 @@ const db = require('../database/db');
 const router = express.Router();
 
 
-router.put('/employee/:id', (req, res) => {
+router.put('/:id', (req, res) => {
     const jobId = req.params.id;
     const { name, position, contactNumber, department } = req.body;
     const sql =
